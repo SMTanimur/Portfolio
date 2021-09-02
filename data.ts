@@ -30,54 +30,53 @@ export const services: IService[] = [
   },
 ];
 
-
 export const languages: ISkill[] = [
   {
     name: 'java Script',
-    level:'70%',
-    Icon:BsCircleFill,
+    level: '87%',
+    Icon: BsCircleFill,
   },
   {
     name: 'React-Native',
-    level:'40%',
-    Icon:BsCircleFill,
+    level: '70%',
+    Icon: BsCircleFill,
   },
   {
     name: 'React',
-    level:'80%',
-    Icon:BsCircleFill,
+    level: '80%',
+    Icon: BsCircleFill,
   },
   {
     name: 'Next JS',
-    level:'85%',
-    Icon:BsCircleFill,
+    level: '85%',
+    Icon: BsCircleFill,
   },
   {
     name: 'Tailwind',
-    level:'90%',
-    Icon:BsCircleFill,
+    level: '90%',
+    Icon: BsCircleFill,
   },
   {
     name: 'Bootstrap',
-    level:'80%',
-    Icon:BsCircleFill,
+    level: '60%',
+    Icon: BsCircleFill,
   },
 ];
 
-export const Tool:ISkill[] =[
+export const Tool: ISkill[] = [
   {
     name: 'Figma',
-    level:'80%',
-    Icon:BsCircleFill,
+    level: '80%',
+    Icon: BsCircleFill,
   },
   {
     name: 'PhotoShop',
-    level:'30%',
-    Icon:BsCircleFill,
+    level: '30%',
+    Icon: BsCircleFill,
   },
   {
     name: 'Framer',
-    level:'50%',
-    Icon:BsCircleFill,
+    level: '50%',
+    Icon: BsCircleFill,
   },
-]
+];

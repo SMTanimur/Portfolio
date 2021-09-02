@@ -3,10 +3,3 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-image: linear-gradient(to bottom right, red, yellow);
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: sans-serif;
-  height: 100%;
-}

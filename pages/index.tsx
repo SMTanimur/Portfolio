@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/image';
+
 import ServicesCard from '../components/ServicesCard';
 import { services } from '../data';
 
@@ -13,19 +13,19 @@ export default function Home() {
         about new technologies and problem-solving. I am available for any kind
         of job opportunity that suits my interests
       </h5>
-      <div className="p-4 mt-5 bg-gray-400 -ml-5 -mr-5 flex-grow">
-        <h1 className="my-3 text-xl font-bold text-green-600">What I am doing</h1>
+      <div className='p-4 mt-5 bg-gray-400  -ml-5 -mr-5 flex-grow'>
+        <h1 className='my-3 text-xl font-bold text-green-600'>
+          What I am doing
+        </h1>
 
-        <div className="grid lg:grid-cols-2 gap-6 lg:mt-20">
-        {services.map((service,index)=>(
-          <div key={index} className="lg:col-span-1 bg-gray-200 rounded-lg">
-           <ServicesCard service={service} />
-          </div>
-           
-        ))}
+        <div className='grid lg:grid-cols-2 gap-6 lg:mt-20'>
+          {services.map((service, index) => (
+            <div key={index} className='lg:col-span-1 bg-gray-200 dark:bg-gray-700 rounded-lg'>
+              <ServicesCard service={service} />
+            </div>
+          ))}
         </div>
       </div>
     </div>
   );
 }
-

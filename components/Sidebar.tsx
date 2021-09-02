@@ -4,10 +4,17 @@ import Link from 'next/link';
 import userImg from '../public/img.jpg';
 import { GrLocation } from 'react-icons/gr';
 import { FaFacebookSquare, FaTwitterSquare, FaGithub } from 'react-icons/fa';
+import { useTheme } from 'next-themes';
 
 const Sidebar = () => {
+  const { theme, setTheme } = useTheme();
+
+  const ThemeChanger = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
+
   return (
-    <div className='flex flex-col items-center justify-center py-32  space-y-3 shadow-lg'>
+    <div className='flex flex-col items-center justify-center py-32  space-y-3 shadow-lg '>
       <Image
         src={userImg}
         width={100}
@@ -15,13 +22,13 @@ const Sidebar = () => {
         className='rounded-full'
         alt=''
       />
-      <h3 className='my-4 text-center lg:text-3xl md:text-xl font-medium tracking-wider text-gray-700 font-kaushan'>
+      <h3 className='my-4 text-center lg:text-3xl md:text-xl font-medium tracking-wider text-gray-700 dark:text-white font-kaushan'>
         <span className='text-green-500'>Tanimur </span>Rahman
       </h3>
-      <p className='w-11/12 px-2 py-1 text-center bg-gray-200 rounded-full my3'>
+      <p className='w-11/12 px-2 py-1 text-center bg-gray-200 dark:text-gray-800 rounded-full my3'>
         Web developer
       </p>
-      <p className='w-11/12 px-2 py-1 text-center bg-gray-200 rounded-full my3'>
+      <p className='w-11/12 px-2 py-1 text-center bg-gray-200 dark:text-gray-800 rounded-full my3'>
         Download Resume
       </p>
       {/* social icon */}
@@ -45,7 +52,10 @@ const Sidebar = () => {
       {/* address */}
       <div className='flex flex-col w-full gap-2 py-6 my-5 bg-black bg-opacity-10'>
         <div className='flex items-center justify-center gap-1'>
-          <GrLocation />
+          <span className='dark:text-green-400 text-2xl'>
+            {' '}
+            <GrLocation />
+          </span>
           <p>Dhaka,Bangladesh</p>
         </div>
         <p className='text-center'>smtanimurrahman@gmail.com</p>
@@ -58,7 +68,10 @@ const Sidebar = () => {
       >
         Email me
       </button>
-      <button className='w-1/2 px-2 py-2 text-lg text-white rounded-full bg-gradient-to-r from-green-400 to-blue-400'>
+      <button
+        className='w-1/2 px-2 py-2 text-lg text-white focus:outline-none rounded-full bg-gradient-to-r from-green-400 to-blue-400'
+        onClick={ThemeChanger}
+      >
         Light UI
       </button>
     </div>
