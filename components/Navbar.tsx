@@ -1,7 +1,7 @@
 import React, { useEffect, useState, FunctionComponent } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { route } from 'next/dist/server/router';
+
 
 const NavbarItem: FunctionComponent<{
   activeItem: string;

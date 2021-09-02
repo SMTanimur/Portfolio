@@ -1,11 +1,31 @@
-import Head from 'next/head'
-import Image from 'next/image'
-
+import Head from 'next/head';
+import Image from 'next/image';
+import ServicesCard from '../components/ServicesCard';
+import { services } from '../data';
 
 export default function Home() {
   return (
+    <div className='flex flex-col px-5 pt-1  flex-grow '>
+      <h5 className='my-3 font-medium'>
+        Hello! I'm Tanim, a passionate self-taught Full Stack developer from
+        Bangladesh. I build things for the web & mobile. I develop web
+        applications, mobile applications & desktop applications. Passionate
+        about new technologies and problem-solving. I am available for any kind
+        of job opportunity that suits my interests
+      </h5>
+      <div className="p-4 mt-5 bg-gray-400 -ml-5 -mr-5 flex-grow">
+        <h1 className="my-3 text-xl font-bold text-green-600">What I am doing</h1>
 
-    <h1 className=" text-3xl">hello world</h1>
-   
-  )
+        <div className="grid lg:grid-cols-2 gap-6 lg:mt-20">
+        {services.map((service,index)=>(
+          <div key={index} className="lg:col-span-1 bg-gray-200 rounded-lg">
+           <ServicesCard service={service} />
+          </div>
+           
+        ))}
+        </div>
+      </div>
+    </div>
+  );
 }
+
