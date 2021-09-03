@@ -2,7 +2,7 @@ import { RiComputerLine } from 'react-icons/ri';
 import { FaServer, FaToolbox } from 'react-icons/fa';
 import { MdDeveloperMode } from 'react-icons/md';
 import { BsCircleFill } from 'react-icons/bs';
-import { IService, ISkill } from './type';
+import { IProject, IService, ISkill } from './type';
 
 export const services: IService[] = [
   {
@@ -80,3 +80,4 @@ export const Tool: ISkill[] = [
     Icon: BsCircleFill,
   },
 ];
+

@@ -20,7 +20,10 @@ export default function Home() {
 
         <div className='grid lg:grid-cols-2 gap-6 lg:mt-20'>
           {services.map((service, index) => (
-            <div key={index} className='lg:col-span-1 bg-gray-200 dark:bg-gray-700 rounded-lg'>
+            <div
+              key={index}
+              className='lg:col-span-1 bg-gray-200 dark:bg-gray-700 rounded-lg'
+            >
               <ServicesCard service={service} />
             </div>
           ))}
