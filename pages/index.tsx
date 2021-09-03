@@ -1,5 +1,3 @@
-import Head from 'next/head';
-
 import ServicesCard from '../components/ServicesCard';
 import { services } from '../data';
 
@@ -7,9 +5,9 @@ export default function Home() {
   return (
     <div className='flex flex-col px-5 pt-1  flex-grow '>
       <h5 className='my-3 font-medium'>
-        Hello! I'm Tanim, a passionate self-taught Full Stack developer from
-        Bangladesh. I build things for the web & mobile. I develop web
-        applications, mobile applications & desktop applications. Passionate
+        Hello! I am Tanim, a passionate self-taught Full Stack developer from
+        Bangladesh. I build things for the web and mobile. I develop web
+        applications, mobile applications and desktop applications. Passionate
         about new technologies and problem-solving. I am available for any kind
         of job opportunity that suits my interests
       </h5>

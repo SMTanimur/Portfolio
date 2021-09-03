@@ -2,7 +2,7 @@ import { RiComputerLine } from 'react-icons/ri';
 import { FaServer, FaToolbox } from 'react-icons/fa';
 import { MdDeveloperMode } from 'react-icons/md';
 import { BsCircleFill } from 'react-icons/bs';
-import { IProject, IService, ISkill } from './type';
+import { IService, ISkill } from './type';
 
 export const services: IService[] = [
   {
